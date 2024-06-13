@@ -6,7 +6,8 @@
 
 body{
     height: 100vh;
-    background: #17a2b8;
+    /* background: #17a2b8; */
+    background-image: url(https://images.unsplash.com/photo-1537498425277-c283d32ef9db?q=80&w=1778&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     overflow: hidden;
 }
 nav{
@@ -86,21 +87,21 @@ nav.open .nav-content span{
 }
 
 .h1{
-    color: #560772;
+    color: #077229;
     font-size: 40px;
     font-weight: bold;
     align-items: center;
-    margin-top: 20%;
+    margin-top: 10%;
     margin-left: 40%;
 }
 .h2{
-    color: #560772;
+    color: #077229;
     font-size: 40px;
     font-weight: bold;
     margin-left: 40%;
 }
 .h3{
-    color: #560772;
+    color: #077229;
     font-size: 40px;
     font-weight: bold;
     margin-left: 40%;

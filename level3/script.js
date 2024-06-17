@@ -1,10 +1,8 @@
-// Toggle dark/light mode
 document.getElementById('toggleMode').addEventListener('click', () => {
     document.body.classList.toggle('light-mode');
     document.body.classList.toggle('dark-mode');
 });
 
-// Set interval to update time
 setInterval(() => {
     const dateElement = document.querySelector("#date");
     const timeElement = document.querySelector("#time");
@@ -37,7 +35,7 @@ setInterval(() => {
 
     // Date formatting
     let day = date.getDate();
-    let month = date.getMonth() + 1; // Months are zero-indexed
+    let month = date.getMonth() + 1;
     let year = date.getFullYear();
     if (day < 10) {
         day = "0" + day;

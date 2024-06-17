@@ -1,5 +1,13 @@
+// Toggle dark/light mode
+document.getElementById('toggleMode').addEventListener('click', () => {
+    document.body.classList.toggle('light-mode');
+    document.body.classList.toggle('dark-mode');
+});
+
+// Set interval to update time
 setInterval(() => {
-    const time = document.querySelector("#time");
+    const dateElement = document.querySelector("#date");
+    const timeElement = document.querySelector("#time");
     let date = new Date();
 
     // Time formatting
@@ -40,5 +48,6 @@ setInterval(() => {
     let dateString = month + "/" + day + "/" + year;
 
     // Set the content
-    time.textContent = dateString + " " + timeString;
+    dateElement.textContent = dateString;
+    timeElement.textContent = timeString;
 }, 1000);

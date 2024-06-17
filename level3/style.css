@@ -9,8 +9,17 @@ html, body {
     display: grid;
     height: 100%;
     place-items: center;
-    /* background: #000; */
-    background-image: url(https://images.unsplash.com/photo-1717864748847-d7451ba5feac?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNnx8fGVufDB8fHx8fA%3D%3D);
+    transition: background-color 0.5s;
+}
+
+body.dark-mode {
+    background: #000;
+    color: #fff;
+}
+
+body.light-mode {
+    background: #fff;
+    color: #000;
 }
 
 .wrapper {
@@ -78,4 +87,26 @@ html, body {
 
 .wrapper span:last-child {
     filter: blur(20px);
+}
+
+button#toggleMode {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ffeb3b;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode button#toggleMode {
+    background-color: #ff00e0;
+    color: #fff;
+}
+
+body.light-mode button#toggleMode {
+    background-color: #14ffe9;
+    color: #000;
 }
